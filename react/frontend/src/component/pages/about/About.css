@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+}
+
+.about-page {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(15, 23, 42);
+  background: rgb(248, 250, 252);
+}
+
+/* =========================
+   ABOUT HERO
+========================= */
+
+.about-hero {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+
+  background: linear-gradient(
+    135deg,
+    rgb(239, 246, 255),
+    rgb(255, 255, 255)
+  );
+}
+
+.about-hero-content {
+  max-width: 750px;
+}
+
+.about-small-title {
+  color: rgb(37, 99, 235);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.about-hero h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.about-hero h1 span {
+  color: rgb(37, 99, 235);
+}
+
+.about-hero p:last-child {
+  color: rgb(100, 116, 139);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  padding: 90px 8%;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  background: white;
+}
+
+.about-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-box {
+  width: 380px;
+  height: 350px;
+  border-radius: 25px;
+
+  background: rgb(37, 99, 235);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.25);
+}
+
+.image-box span {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.image-box h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.image-box p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.about-content {
+  width: 50%;
+}
+
+.section-title {
+  color: rgb(37, 99, 235);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.about-content h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.about-content p:not(.section-title) {
+  color: rgb(100, 116, 139);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-btn {
+  margin-top: 10px;
+  padding: 13px 25px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: rgb(37, 99, 235);
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.about-btn:hover {
+  background: rgb(29, 78, 216);
+}
+
+/* =========================
+   VALUES
+========================= */
+
+.mission {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.mission-heading h2 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.mission-heading > p:last-child {
+  color: rgb(100, 116, 139);
+  margin-bottom: 45px;
+}
+
+.values-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.value-card {
+  width: 30%;
+  padding: 35px 25px;
+
+  background: white;
+  border: 1px solid rgb(226, 232, 240);
+  border-radius: 15px;
+
+  transition: 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.value-icon {
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.value-card h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  color: rgb(100, 116, 139);
+  line-height: 1.6;
+}
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+  padding: 60px 8%;
+
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+  background: rgb(15, 23, 42);
+  color: white;
+}
+
+.stat h2 {
+  color: rgb(96, 165, 250);
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.stat p {
+  color: rgb(226, 232, 240);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+  .about-hero h1 {
+    font-size: 40px;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-image,
+  .about-content {
+    width: 100%;
+  }
+
+  .values-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value-card {
+    width: 90%;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .stat {
+    width: 40%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .image-box {
+    width: 100%;
+    height: 300px;
+  }
+
+  .about-content h2 {
+    font-size: 30px;
+  }
+
+  .stat {
+    width: 100%;
+  }
+}

@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 70px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #334155;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.nav-btn {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 570px;
+  padding: 70px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.small-title {
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.hero h1 span {
+  color: #2563eb;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 14px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+.secondary-btn {
+  border: 1px solid #2563eb;
+  background: white;
+  color: #2563eb;
+}
+
+.secondary-btn:hover {
+  background: #eff6ff;
+}
+
+/* Hero Card */
+
+.hero-card {
+  width: 350px;
+  height: 350px;
+  border-radius: 30px;
+  background: #2563eb;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.25);
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.15;
+  position: absolute;
+}
+
+.card-content {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 17px;
+}
+
+/* Features */
+
+.features {
+  padding: 80px 8%;
+  text-align: center;
+  background: white;
+}
+
+.features h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  color: #64748b;
+  margin-bottom: 45px;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.feature-card {
+  width: 30%;
+  padding: 35px 25px;
+  border-radius: 15px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* CTA */
+
+.cta {
+  padding: 70px 20px;
+  text-align: center;
+  background: #2563eb;
+  color: white;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.cta p {
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+
+.cta button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #2563eb;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cta button:hover {
+  background: #eff6ff;
+}
+
+/* Footer */
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #0f172a;
+  color: #cbd5e1;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .feature-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 80%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-card {
+    width: 280px;
+    height: 280px;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+}
